@@ -13,17 +13,23 @@ window.addEventListener('DOMContentLoaded', () => {
 function calcMe() {
     console.log("calculating");
 
-    let firstInput = document.querySelector("#firstnumber").value;
+    let firstInput = parseInt(document.querySelector("#firstnumber").value);
     console.log(firstInput);
-
-    let secondInput = document.querySelector("#secondnumber").value;
-    console.log(secondInput);
 
     let operator = document.querySelector("#operator").value;
     console.log(operator);
 
-    let result = document.querySelector("#results" [0]);
+    let secondInput = parseInt(document.querySelector("#secondnumber").value);
+    console.log(secondInput);
 
-    result = parseInt(firstInput) + (operator) + parseInt(secondInput);
+    let result = document.getElementById("results li" [0].innerHTML);
+
+    if (operator === 'add') {
+        result = firstInput + secondInput;
+        console.log(result);
+    }
+
+
+
 
 }
